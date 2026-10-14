@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>graingraph: embedded graph database for Go, Neo4j-compatible</title>
-<meta name="description" content="graingraph is an embedded property graph database for Go: Cypher over SQLite, no CGO. It also ships graingraph-query, a Neo4j Query API server with compact output and a built-in skill for AI agents.">
+<title>graingraph: embedded graph database for Go</title>
+<meta name="description" content="An embedded property graph database for Go: Cypher over SQLite, no CGO. Includes graingraph-query, an HTTP server compatible with Neo4j's Query API, with compact output and a built-in skill for AI agents.">
 <link rel="canonical" href="https://graingraph.com/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14130f" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:title" content="graingraph: embedded graph database for Go">
-<meta property="og:description" content="Cypher over SQLite for Go, plus a Neo4j-compatible server with compact output and a built-in skill for AI agents.">
+<meta property="og:description" content="Cypher over SQLite for Go, plus an HTTP server compatible with Neo4j's Query API, with compact output and a built-in skill for AI agents.">
 <meta property="og:url" content="https://graingraph.com/">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="style.css">
@@ -71,7 +71,7 @@
         <article class="card">
           <span class="tag">Server</span>
           <h3>HTTP when you need it</h3>
-          <p><code>graingraph-query</code> speaks the Neo4j Query API v2 so clients written for Neo4j work unchanged and moving to Neo4j later stays straightforward.</p>
+          <p><code>graingraph-query</code> speaks the Neo4j Query API v2, so most clients written for Neo4j work with it and moving to Neo4j later stays straightforward.</p>
         </article>
         <article class="card">
           <span class="tag">Agents</span>
@@ -133,7 +133,7 @@ curl -u admin:change-me \
   <section id="same-query">
     <div class="wrap">
       <h2>The same query, in two formats</h2>
-      <p class="sub">A statement that returns two nodes and the relationship between them, on the Neo4j movies graph. Real output from the server, on the left as the Neo4j-compatible JSON and on the right as TOON.</p>
+      <p class="sub">A statement that returns two nodes and the relationship between them, on a small movie graph. Real output from the server, on the left as the Query API JSON and on the right as TOON.</p>
       <div class="two">
         <div>
           <p class="label">JSON <span class="pill">147 tokens</span></p>
@@ -222,6 +222,7 @@ graingraph-query skill --url https://your-server &gt; SKILL.md</code></pre></div
       <li><a href="https://github.com/graingraph/graingraph/issues">Issues</a></li>
       <li><a href="llms.txt">llms.txt</a></li>
     </ul>
+    <p class="legal">Neo4j is a registered trademark of Neo4j, Inc. graingraph is an independent project and is not affiliated with, endorsed by or sponsored by Neo4j, Inc. References to Neo4j describe compatibility.</p>
   </div>
 </footer>
 </body>

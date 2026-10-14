@@ -1,6 +1,6 @@
 # graingraph
 
-> graingraph is an embedded property graph database for Go: Cypher 25 over SQLite, no CGO. It also ships graingraph-query, an HTTP server that implements the Neo4j Query API v2, with a compact `text/toon` output format and a built-in agent skill served at `/skills`.
+> graingraph is an embedded property graph database for Go: Cypher 25 over SQLite, no CGO. It also ships graingraph-query, an HTTP server compatible with Neo4j's Query API v2, with a compact `text/toon` output format and a built-in agent skill served at `/skills`.
 
 To query a running graingraph-query server, send Cypher as JSON to `POST /db/neo4j/query/v2` with basic auth and `Accept: text/toon`. Every failure is an HTTP error status in that format. A server describes itself at `GET /skills` and `GET /skills/graingraph-query` (no credentials needed).
 
