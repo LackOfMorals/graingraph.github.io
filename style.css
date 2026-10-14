@@ -118,6 +118,8 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: 
 footer ul { display: flex; flex-wrap: wrap; gap: 8px 18px; list-style: none; padding: 0; margin: 0; }
 footer a { color: var(--muted); }
 footer a:hover { color: var(--text); }
+footer p { margin: 0; }
+footer .legal { flex-basis: 100%; margin: 4px 0 0; font-size: .85rem; max-width: 60em; }
 
 @media (max-width: 560px) {
   .wrap { padding: 0 16px; }
