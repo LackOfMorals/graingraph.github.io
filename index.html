@@ -34,7 +34,6 @@
         <li><a href="#features">Features</a></li>
         <li><a href="#quick-start">Quick start</a></li>
         <li><a href="#agents">For agents</a></li>
-        <li><a href="#measured">Measured</a></li>
         <li><a class="btn secondary small" href="https://github.com/graingraph/graingraph">GitHub</a></li>
       </ul>
     </nav>
@@ -46,7 +45,7 @@
     <div class="hero">
       <p class="eyebrow">Open source &middot; Apache 2.0 &middot; v0.3.0</p>
       <h1>A graph database you can embed, query with Cypher, and hand to an AI agent.</h1>
-      <p class="lede">graingraph is an embedded property graph database for Go. It stores data in SQLite, speaks Cypher, and needs no CGO and no server. It also ships <code>graingraph-query</code>, an HTTP server with the Neo4j Query API, a compact output format and a built-in skill, so an agent can learn to use it on its own.</p>
+      <p class="lede">graingraph is an embedded property graph database for Go. It stores data in SQLite, speaks Cypher, and needs no CGO and no server. It also ships <code>graingraph-query</code>, an HTTP server compatible with Neo4j&rsquo;s Query API, a compact output format and a built-in skill, so an agent can learn to use it on its own.</p>
       <div class="cta">
         <a class="btn primary" href="#quick-start">Get started</a>
         <a class="btn secondary" href="https://github.com/graingraph/graingraph">View on GitHub</a>
@@ -71,8 +70,8 @@
         </article>
         <article class="card">
           <span class="tag">Server</span>
-          <h3>Neo4j when you need it</h3>
-          <p><code>graingraph-query</code> speaks the Neo4j Query API v2 and has been compared side by side with Neo4j 2026.07, so clients written for Neo4j work unchanged and moving to Neo4j later stays straightforward.</p>
+          <h3>HTTP when you need it</h3>
+          <p><code>graingraph-query</code> speaks the Neo4j Query API v2 so clients written for Neo4j work unchanged and moving to Neo4j later stays straightforward.</p>
         </article>
         <article class="card">
           <span class="tag">Agents</span>
@@ -206,20 +205,6 @@ graingraph-query skill --url https://your-server &gt; SKILL.md</code></pre></div
       <p class="note">This site also has an <a href="llms.txt">llms.txt</a>, and the repository has an <a href="https://github.com/graingraph/graingraph/blob/main/AGENTS.md">AGENTS.md</a> for agents that work on the code.</p>
     </div>
   </section>
-
-  <section id="measured">
-    <div class="wrap">
-      <h2>Measured, with the caveats</h2>
-      <p class="sub">We compared the compact format against JSON and the server against a real Neo4j.</p>
-      <div class="stats">
-        <div class="stat"><p class="big">60%</p><p>of the tokens of plain JSON, across 49 queries on the Neo4j movies graph. About half for nodes and relationships.</p></div>
-        <div class="stat"><p class="big">98.4% vs 98.4%</p><p>of questions answered correctly from JSON and from TOON results, by Haiku and Sonnet, 192 questions each on the movies graph.</p></div>
-        <div class="stat"><p class="big">72 / 72</p><p>side-by-side compatibility checks against Neo4j 2026.07 pass. The differences that remain are documented.</p></div>
-      </div>
-      <p class="note">These are small experiments on one dataset, with two models and one run per question. The accuracy result means no loss was measurable, not that TOON is better. The <a href="https://github.com/graingraph/graingraph#token-cost-and-accuracy">README</a> has the method, the limits and the known differences from Neo4j.</p>
-    </div>
-  </section>
-
   <section id="status">
     <div class="wrap">
       <h2>Status</h2>
