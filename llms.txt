@@ -1,0 +1,22 @@
+# graingraph
+
+> graingraph is an embedded property graph database for Go: Cypher 25 over SQLite, no CGO. It also ships graingraph-query, an HTTP server that implements the Neo4j Query API v2, with a compact `text/toon` output format and a built-in agent skill served at `/skills`.
+
+To query a running graingraph-query server, send Cypher as JSON to `POST /db/neo4j/query/v2` with basic auth and `Accept: text/toon`. Every failure is an HTTP error status in that format. A server describes itself at `GET /skills` and `GET /skills/graingraph-query` (no credentials needed).
+
+## Docs
+
+- [README](https://raw.githubusercontent.com/LackOfMorals/graingraph/main/README.md): library usage, the server, endpoints, TOON output, configuration, measurements and known differences from Neo4j
+- [Agent skill](https://raw.githubusercontent.com/LackOfMorals/graingraph/main/internal/server/skills/graingraph-query/SKILL.md): how an agent queries a graingraph-query server (the live server fills in its own URL)
+- [AGENTS.md](https://raw.githubusercontent.com/LackOfMorals/graingraph/main/AGENTS.md): layout, conventions and commands for working on the code
+
+## Code and releases
+
+- [Source repository](https://github.com/LackOfMorals/graingraph)
+- [Releases](https://github.com/LackOfMorals/graingraph/releases): graingraph-query binaries for Linux, macOS and Windows
+- [Issues](https://github.com/LackOfMorals/graingraph/issues)
+
+## Optional
+
+- [Go package documentation](https://pkg.go.dev/github.com/LackOfMorals/graingraph)
+- [Apache License 2.0](https://raw.githubusercontent.com/LackOfMorals/graingraph/main/LICENSE)

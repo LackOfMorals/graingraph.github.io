@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="graingraph">
+  <style>
+    .e{stroke:#b45309}.n{fill:#b45309}
+    @media (prefers-color-scheme: dark){.e{stroke:#f0b04a}.n{fill:#f0b04a}}
+  </style>
+  <path class="e" d="M7 23 C 11 14, 14 11, 17 8 M17 8 C 19 13, 22 17, 26 21 M7 23 C 14 26, 20 25, 26 21" fill="none" stroke-width="2.2" stroke-linecap="round"/>
+  <circle class="n" cx="7" cy="23" r="3.6"/>
+  <circle class="n" cx="17" cy="8" r="3.6"/>
+  <circle class="n" cx="26" cy="21" r="3.6"/>
+</svg>
