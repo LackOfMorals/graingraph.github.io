@@ -35,7 +35,7 @@
         <li><a href="#quick-start">Quick start</a></li>
         <li><a href="#agents">For agents</a></li>
         <li><a href="#measured">Measured</a></li>
-        <li><a class="btn secondary small" href="https://github.com/LackOfMorals/graingraph">GitHub</a></li>
+        <li><a class="btn secondary small" href="https://github.com/graingraph/graingraph">GitHub</a></li>
       </ul>
     </nav>
   </div>
@@ -44,12 +44,12 @@
 <main id="main">
   <div class="wrap">
     <div class="hero">
-      <p class="eyebrow">Open source &middot; Apache 2.0 &middot; v0.2.0</p>
+      <p class="eyebrow">Open source &middot; Apache 2.0 &middot; v0.3.0</p>
       <h1>A graph database you can embed, query with Cypher, and hand to an AI agent.</h1>
       <p class="lede">graingraph is an embedded property graph database for Go. It stores data in SQLite, speaks Cypher, and needs no CGO and no server. It also ships <code>graingraph-query</code>, an HTTP server with the Neo4j Query API, a compact output format and a built-in skill, so an agent can learn to use it on its own.</p>
       <div class="cta">
         <a class="btn primary" href="#quick-start">Get started</a>
-        <a class="btn secondary" href="https://github.com/LackOfMorals/graingraph">View on GitHub</a>
+        <a class="btn secondary" href="https://github.com/graingraph/graingraph">View on GitHub</a>
       </div>
     </div>
   </div>
@@ -90,9 +90,9 @@
       <div class="stack">
         <div>
           <p class="label">As a Go library</p>
-          <div class="code"><pre><code>go get github.com/LackOfMorals/graingraph
+          <div class="code"><pre><code>go get github.com/graingraph/graingraph
 
-import "github.com/LackOfMorals/graingraph"
+import "github.com/graingraph/graingraph"
 
 db, err := graingraph.Open(":memory:")
 if err != nil { log.Fatal(err) }
@@ -111,7 +111,7 @@ for result.Next(ctx) {
         <div>
           <p class="label">As a server</p>
           <div class="code"><pre><code>go install \
-  github.com/LackOfMorals/graingraph/cmd/graingraph-query@latest
+  github.com/graingraph/graingraph/cmd/graingraph-query@latest
 
 export GRAINGRAPH_QUERY_PASSWORD=change-me
 graingraph-query --username admin --db graingraph.db
@@ -125,7 +125,7 @@ curl -u admin:change-me \
 # rows[2]{name,born}:
 #   Ada,1815
 #   Grace,1906</code></pre></div>
-          <p class="note">Prebuilt binaries for Linux, macOS and Windows are on the <a href="https://github.com/LackOfMorals/graingraph/releases">releases page</a>.</p>
+          <p class="note">Prebuilt binaries for Linux, macOS and Windows are on the <a href="https://github.com/graingraph/graingraph/releases">releases page</a>.</p>
         </div>
       </div>
     </div>
@@ -203,7 +203,7 @@ curl https://your-server/skills/graingraph-query
 
 # or from the binary, with no server running
 graingraph-query skill --url https://your-server &gt; SKILL.md</code></pre></div>
-      <p class="note">This site also has an <a href="llms.txt">llms.txt</a>, and the repository has an <a href="https://github.com/LackOfMorals/graingraph/blob/main/AGENTS.md">AGENTS.md</a> for agents that work on the code.</p>
+      <p class="note">This site also has an <a href="llms.txt">llms.txt</a>, and the repository has an <a href="https://github.com/graingraph/graingraph/blob/main/AGENTS.md">AGENTS.md</a> for agents that work on the code.</p>
     </div>
   </section>
 
@@ -216,25 +216,25 @@ graingraph-query skill --url https://your-server &gt; SKILL.md</code></pre></div
         <div class="stat"><p class="big">98.4% vs 98.4%</p><p>of questions answered correctly from JSON and from TOON results, by Haiku and Sonnet, 192 questions each on the movies graph.</p></div>
         <div class="stat"><p class="big">72 / 72</p><p>side-by-side compatibility checks against Neo4j 2026.07 pass. The differences that remain are documented.</p></div>
       </div>
-      <p class="note">These are small experiments on one dataset, with two models and one run per question. The accuracy result means no loss was measurable, not that TOON is better. The <a href="https://github.com/LackOfMorals/graingraph#token-cost-and-accuracy">README</a> has the method, the limits and the known differences from Neo4j.</p>
+      <p class="note">These are small experiments on one dataset, with two models and one run per question. The accuracy result means no loss was measurable, not that TOON is better. The <a href="https://github.com/graingraph/graingraph#token-cost-and-accuracy">README</a> has the method, the limits and the known differences from Neo4j.</p>
     </div>
   </section>
 
   <section id="status">
     <div class="wrap">
       <h2>Status</h2>
-      <p class="sub">graingraph is at v0.2.0 and young. The API may still change before 1.0. The server is single-user by design: one credential, and one transaction open at a time. If that fits what you are building, <a href="https://github.com/LackOfMorals/graingraph">take a look at the code</a>, and open an issue if something is missing.</p>
+      <p class="sub">graingraph is at v0.3.0 and young. The API may still change before 1.0. The server is single-user by design: one credential, and one transaction open at a time. If that fits what you are building, <a href="https://github.com/graingraph/graingraph">take a look at the code</a>, and open an issue if something is missing.</p>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <p>graingraph is open source under the <a href="https://github.com/LackOfMorals/graingraph/blob/main/LICENSE">Apache License 2.0</a>.</p>
+    <p>graingraph is open source under the <a href="https://github.com/graingraph/graingraph/blob/main/LICENSE">Apache License 2.0</a>.</p>
     <ul>
-      <li><a href="https://github.com/LackOfMorals/graingraph">GitHub</a></li>
-      <li><a href="https://github.com/LackOfMorals/graingraph/releases">Releases</a></li>
-      <li><a href="https://github.com/LackOfMorals/graingraph/issues">Issues</a></li>
+      <li><a href="https://github.com/graingraph/graingraph">GitHub</a></li>
+      <li><a href="https://github.com/graingraph/graingraph/releases">Releases</a></li>
+      <li><a href="https://github.com/graingraph/graingraph/issues">Issues</a></li>
       <li><a href="llms.txt">llms.txt</a></li>
     </ul>
   </div>

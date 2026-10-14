@@ -6,17 +6,17 @@ To query a running graingraph-query server, send Cypher as JSON to `POST /db/neo
 
 ## Docs
 
-- [README](https://raw.githubusercontent.com/LackOfMorals/graingraph/main/README.md): library usage, the server, endpoints, TOON output, configuration, measurements and known differences from Neo4j
-- [Agent skill](https://raw.githubusercontent.com/LackOfMorals/graingraph/main/internal/server/skills/graingraph-query/SKILL.md): how an agent queries a graingraph-query server (the live server fills in its own URL)
-- [AGENTS.md](https://raw.githubusercontent.com/LackOfMorals/graingraph/main/AGENTS.md): layout, conventions and commands for working on the code
+- [README](https://raw.githubusercontent.com/graingraph/graingraph/main/README.md): library usage, the server, endpoints, TOON output, configuration, measurements and known differences from Neo4j
+- [Agent skill](https://raw.githubusercontent.com/graingraph/graingraph/main/internal/server/skills/graingraph-query/SKILL.md): how an agent queries a graingraph-query server (the live server fills in its own URL)
+- [AGENTS.md](https://raw.githubusercontent.com/graingraph/graingraph/main/AGENTS.md): layout, conventions and commands for working on the code
 
 ## Code and releases
 
-- [Source repository](https://github.com/LackOfMorals/graingraph)
-- [Releases](https://github.com/LackOfMorals/graingraph/releases): graingraph-query binaries for Linux, macOS and Windows
-- [Issues](https://github.com/LackOfMorals/graingraph/issues)
+- [Source repository](https://github.com/graingraph/graingraph)
+- [Releases](https://github.com/graingraph/graingraph/releases): graingraph-query binaries for Linux, macOS and Windows
+- [Issues](https://github.com/graingraph/graingraph/issues)
 
 ## Optional
 
-- [Go package documentation](https://pkg.go.dev/github.com/LackOfMorals/graingraph)
-- [Apache License 2.0](https://raw.githubusercontent.com/LackOfMorals/graingraph/main/LICENSE)
+- [Go package documentation](https://pkg.go.dev/github.com/graingraph/graingraph)
+- [Apache License 2.0](https://raw.githubusercontent.com/graingraph/graingraph/main/LICENSE)
